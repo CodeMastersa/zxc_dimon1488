@@ -1,0 +1,94 @@
+/* Подключаем твой шрифт из папки fonts */
+@import url('fonts/main_font.css'); 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* НОВЫЙ ФОН: Приятный градиент в стиле "Рассвет" */
+    background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background-attachment: fixed;
+    
+    /* Используем твой шрифт StratosSkyengWeb */
+    font-family: 'StratosSkyengWeb', sans-serif; 
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Навигация */
+.navigation {
+    padding: 20px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4a90e2;
+    background: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.nav-links a:hover {
+    background: #4a90e2;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Центрированный блок контента */
+.center {
+    max-width: 850px;
+    margin: 40px auto; /* Центрирование блока */
+    background: rgba(255, 255, 255, 0.9); /* Полупрозрачный белый */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    backdrop-filter: blur(10px); /* Эффект размытия под блоком */
+}
+
+/* --- КАРТИНКИ ОДНОГО РАЗМЕРА --- */
+img {
+    width: 300px;           /* Одинаковая ширина */
+    height: 300px;          /* Одинаковая высота */
+    object-fit: cover;      /* Картинка заполняет квадрат, не сплющиваясь */
+    border-radius: 15px;
+    display: block;
+    margin: 25px auto;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    text-align: center;
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+ul, ol {
+    margin: 20px 40px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #7f8c8d;
+}
